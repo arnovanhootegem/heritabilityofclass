@@ -93,7 +93,13 @@ sd(dz$BU50, na.rm = TRUE)
 sd(dz$Inc50, na.rm = TRUE)
 sd(dz$trei50, na.rm = TRUE)
 
-rec <- regoccimerge %>% distinct(w18_0590_lopenr_person, .keep_all = TRUE)
+reg <- select(regoccimerge, w18_0590_lopenr_person, kjoenn, foedselsaar, BU50, Inc50)
+reg <- distinct(reg)
+trei <- distinct(trei)
+
+rec <- inner_join(reg, trei, by = "w18_0590_lopenr_person")
+rec <- distinct(rec)
+rec <- drop_na(rec)
 rec$BU50 <- as.numeric(rec$BU50)
 rec <- mutate(rec, gender = ifelse(kjoenn == 2, 1, 0))
 summary(rec)
@@ -101,14 +107,7 @@ sd(rec$gender)
 sd(rec$foedselsaar)
 sd(rec$BU50, na.rm = TRUE)
 sd(rec$Inc50, na.rm = TRUE)
-
-
-regoccimerge <- readRDS("N:/durable/projects/class/01 - Data/Trei.rds")
-rec <- regoccimerge %>% distinct(w18_0590_lopenr_person, .keep_all = TRUE)
-summary(rec)
 sd(rec$trei50, na.rm = TRUE)
-
-
 
 #### Correlations and percentage in each class for twins
 
