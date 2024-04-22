@@ -9,8 +9,8 @@ It constructs class schemes (EGP, SIOPS, ISEI, Oesch and ORDC) based on Norwegia
 # Scripts
 
 - `Data preperation.R`: Prepares and merges data that is used for the analysis
-- `Coding Class schemes.R': Codes all of the class schemes needed for the analyses
-- 'Twin analyses.R': Conducts all metric, ordinal and binary twin analyses
+- `Coding Class schemes.R`: Codes all of the class schemes needed for the analyses
+- `Twin analyses.R`: Conducts all metric, ordinal and binary twin analyses
 - `Descriptives.R`: Generates descriptive statistics for the full population, monozygotic and dizygotic twins
 
 # Data
