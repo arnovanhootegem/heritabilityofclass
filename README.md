@@ -3,7 +3,7 @@ R scripts for paper on the Heritability of Class and Status by Arno Van Hootegem
 
 # My R Scripts
 
-This repository contains a collection of R scripts I've made for the paper "Heritability of class", written by Arno Van Hootegem, Adrian Farner Rogne and Torkild Hovde Lyngstad. 
+This repository contains a collection of R scripts I've made for the paper "Heritability of Class and Status", written by Arno Van Hootegem, Adrian Farner Rogne and Torkild Hovde Lyngstad. 
 It constructs class schemes (EGP, SIOPS, ISEI, Oesch and ORDC) based on Norwegian registry data, which are then analysed using twin models (metric, ordinal and binary) to estimate the heritability of class.
 
 # Scripts
